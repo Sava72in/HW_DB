@@ -1,6 +1,6 @@
 create table if not exists musical_genre(
 genre_id serial primary key,
-name varchar(40) not null);
+name varchar(40) unique not null );
 
 create table if not exists artist(
 artist_id serial primary key,
